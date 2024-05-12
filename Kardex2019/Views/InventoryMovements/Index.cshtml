@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Kardex2019.Models.InventoryMovements>
+
+@{
+    ViewBag.Title = "InventoryMovements";
+}
+
+<h2>InventoryMovements</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<p>
+    <a class="btn btn-success" href="@Url.Action("exportReport")">Crystal Report Inventory Movements</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WarehouseId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WarehouseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.InventoryMovementId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.InventoryMovementId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.InventoryMovementId })
+            </td>
+        </tr>
+    }
+
+</table>

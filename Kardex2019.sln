@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kardex2019", "Kardex2019\Kardex2019.csproj", "{BCE881D6-7EBD-4314-B639-C6EB7E1BEAC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE881D6-7EBD-4314-B639-C6EB7E1BEAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE881D6-7EBD-4314-B639-C6EB7E1BEAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE881D6-7EBD-4314-B639-C6EB7E1BEAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE881D6-7EBD-4314-B639-C6EB7E1BEAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {946CA2F9-04F1-4886-92CB-2FA40FA3DBE7}
+	EndGlobalSection
+EndGlobal
